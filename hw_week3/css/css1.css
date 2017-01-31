@@ -9,7 +9,7 @@ img{
 	width: 225px;
 	left: 50%;
 	top: 60vh;
-	transform: translate(-50%,-40%);
+	transform: translate(-50%,-30%);
 	z-index: 10;
 }
 
@@ -19,6 +19,14 @@ img{
 	background-image: url('../com_back.jpg');
 	background-size: auto 100%;
 	background-position: center;
+}
+
+.img_box h1{
+	color: #fff;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	font-size: 2.2rem;
+	padding-top: 25vh;
 }
 
 @media (min-width: 41.63rem){
@@ -32,12 +40,21 @@ img{
 		background-size: auto 100%;
 		background-position: center -10rem;
 	}
+
 	.white_top{
 		position: absolute;
 		width: 100%;
 		height: 50vh;
 		top: 50%;
 		background-color: #fff;
+	}
+
+	.img_box h1{
+		color: #fff;
+		font-family: Arial, sans-serif;
+		text-align: center;
+		font-size: 2.2rem;
+		padding-top: 20vh;
 	}
 }
 

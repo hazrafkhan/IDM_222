@@ -5,23 +5,32 @@
 }
 
 .wrap{
-	overflow: auto;
-	width: 100%;
+	display: block;
+	margin: auto;
+	width: 300px;
 }
 
 .boxs{
+	float: left;
 	width: 280px;
 	height: 280px;
 	background-color: red;
-	margin: auto;
+	margin-left: 10px;
 	margin-top: 20px;
+}
+
+.boxs h2{
+	color: #fff;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin-top: 50%;
+	transform: translate(0%,-50%);
+	font-size: 1.8rem;
 }
 
 @media (min-width: 41.63rem){
 	/* 666px */
 	.wrap{
-		display: block;
-		margin: auto;
 		width: 41.63rem;
 	}
 
@@ -35,8 +44,6 @@
 @media (min-width: 60rem){
 	/* 960px */
 	.wrap{
-		display: block;
-		margin: auto;
 		width: 60rem;
 	}
 

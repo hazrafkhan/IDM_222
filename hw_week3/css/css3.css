@@ -4,8 +4,11 @@
 	padding: 0;
 }
 
+html {font-size: 100%;}
+
 p{
 	color: #fff;
+	font: 100%/1.2 Arial, sans-serif;
 }
 
 .boxs{
