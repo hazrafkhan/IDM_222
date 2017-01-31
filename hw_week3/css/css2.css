@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.wrap{
+	overflow: auto;
+	width: 100%;
+}
+
+.boxs{
+	width: 280px;
+	height: 280px;
+	background-color: red;
+	margin: auto;
+	margin-top: 20px;
+}
+
+@media (min-width: 41.63rem){
+	/* 666px */
+	.wrap{
+		display: block;
+		margin: auto;
+		width: 41.63rem;
+	}
+
+	.boxs{
+		float: left;
+		margin-left: 35.33px;
+	}
+
+}
+
+@media (min-width: 60rem){
+	/* 960px */
+	.wrap{
+		display: block;
+		margin: auto;
+		width: 60rem;
+	}
+
+	.boxs{
+		margin-left: 30px;
+	}
+	
+}
+
