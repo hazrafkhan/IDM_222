@@ -22,7 +22,7 @@ h4{
 }
 
 h5{
-  color: 212121;
+  color: #212121;
   font-size: 1.3rem;
   margin: 5px;
   padding: 0;
@@ -185,8 +185,6 @@ h6{
   font-family: 'Raleway', sans-serif;
   cursor: pointer;
   resize: none;
-  -webkit-transition: linear 0.1s; /* Safari */
-      transition: linear 0.1s;
 }
 
 .resume button:hover {

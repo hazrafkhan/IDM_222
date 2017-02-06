@@ -5,13 +5,29 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 	<title>Mohammad Hazraf Khan HW3-1</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
 
-	<img src="image/com_back.jpg" alt="blurred macbook computer" class="back_img">
+	<picture>
+		<source media="(min-width: 960px)"
+		sizes="100vh"
+		class="back_img" 
+		srcset="image/com_back_l.jpg 960w">
+
+		<source media="(min-width: 666px)"
+		sizes="100vh"
+		class="back_img" 
+		srcset="image/com_back_m.jpg 666w">
+
+		<img src="image/com_back_s.jpg" alt="blurred macbook background"
+		sizes="100vw"
+		class="back_img" 
+		srcset="image/com_back_s.jpg 320w">
+	</picture>
 
 	<div class="home">
 

@@ -11,7 +11,12 @@
 
 <body>
 
-	<img src="image/com_back.jpg" alt="blurred macbook computer" class="back_img">
+	<picture>
+      <source media="(min-width: 666px)" srcset="image/com_back_m.jpg" class="back_img">
+      <source media="(min-width: 960px)" srcset="image/com_back_l.jpg" class="back_img">
+      <!-- img tag for browsers that do not support picture element -->
+      <img src="image/com_back_s.jpg" alt="blurred macbook background" class="back_img">
+    </picture>
 
 	<div class="home">
 
