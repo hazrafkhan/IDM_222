@@ -61,33 +61,28 @@ h6{
   display: block;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
 
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-
-  margin: 0px auto;
+.row {
+  overflow: auto;
+  margin: 0px auto 0px;
   max-width: 960px;
 }
 
-.wrapper>*  {
-  border: 1px solid #2d9dc0;
-  padding: 0px 0px 16px 16px;
-  flex: 1 100%;
-  text-align: left;
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
-.wrapper_id{
-  padding-left: 0px;
+[class*="col-"] {
+  border: 1px solid #2d9dc0;
+  padding: 16px;
+  width: 100%;
 }
 
 .pad_5{
-  padding: 0px 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .back_img{
@@ -133,8 +128,6 @@ h6{
 }
 
 .wrap{
-  padding-left: 0px;
-  padding-bottom: 20px;
   display: block;
   margin: auto;
   width: 300px;
@@ -176,6 +169,7 @@ h6{
   padding-top: 1.5rem;
 }
 
+
 .resume{
   display: block;
 }
@@ -194,24 +188,45 @@ h6{
 }
 
 .resume button:hover {
-  background: #344868;
-  color: #fff;
-  border-color: #fff;
-}
+    background: #344868;
+    color: #fff;
+    border-color: #fff;
+  }
 
-.social{
+  .social{
   text-align: center;
-}
+ }
 
-.social img{
+ .social img{
   height: 4rem;
   width: 4rem;
   margin: 0.8rem 2rem 0 0;
-}
+ }
 
 
 
 @media screen and (min-width: 666px) {
+  [class*="col-"] {
+    border: 1px solid rgba(249, 38, 114, 1);
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  [class*="col-"]{
+    float: left;
+  }
+
+  .col-6 {width: 100%;}
 
   h4{
     margin-left: 0px;
@@ -254,18 +269,12 @@ h6{
     margin-left: 35.33px;
   }
 
-  .pad_1, .pad_3{
-    flex: 1 30%;
-  }
-
-  .pad_2, .pad_4{
-    flex: 1 70%;
-  }
-
 
 }
 
 @media screen and (min-width: 960px){
+
+.col-6 {width: 50%;}
 
  .back_img{
   width: 100%;
@@ -284,11 +293,6 @@ h6{
 
 .boxs{
   margin-left: 30px;
-}
-
-.wrap_half{
-
-  flex: 1 50%;
 }
 
 }
