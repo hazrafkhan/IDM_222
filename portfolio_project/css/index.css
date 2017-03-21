@@ -8,7 +8,9 @@
 ##     ## ##     ## #### ##    ## 
 */
 
-* { box-sizing: border-box; }
+* { 
+  box-sizing: border-box; 
+}
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto', sans-serif;
@@ -215,6 +217,15 @@ h6{
 .full_width{
   width: 100%;
   display: block;
+}
+
+.hidden{ 
+  /* remove x scrollbar due to large image */
+  top: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .wrapper {
