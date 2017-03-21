@@ -23,3 +23,26 @@ $(document).ready(function(){
 	    } // End if
 	});
 	});
+
+
+jQuery(function($) {
+
+    var $nav = $('#nav_bar');
+    var $win = $(window);
+    var winH = $win.height(); // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $nav.addClass("doch");
+            var $topshifts = $('#topshift');
+            $topshifts.addClass("doch_top");
+        } else {
+            $nav.removeClass("doch");
+            var $topshifts = $('#topshift');
+            $topshifts.removeClass("doch_top");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
+
+});
